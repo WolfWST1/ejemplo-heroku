@@ -2,11 +2,11 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res)=>{
-    res.sendFile('Hello_world.html')
+    res.sendFile(__dirname + '/Hello_world.html')
 })
 
 app.get('/form', (req, res)=>{
-    res.sendFile('form.html')
+    res.sendFile(__dirname + '/form.html')
 })
 
 app.listen(3000)
